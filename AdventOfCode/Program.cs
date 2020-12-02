@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using AdventOfCode.Challenges;
 
 namespace AdventOfCode
 {
@@ -6,7 +7,7 @@ namespace AdventOfCode
     {
         public static async Task Main(string[] args)
         {
-            await One.Run();
+            await Two.Run();
         }
     }
 }
