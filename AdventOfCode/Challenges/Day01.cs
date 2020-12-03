@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace AdventOfCode.Challenges
 {
     public class Day01
     {
-        public static async Task Run()
+        public static void Run()
         {
-            var lines = await File.ReadAllLinesAsync($"{AppContext.BaseDirectory}/1.txt");
+            var lines = File.ReadAllLines($"{AppContext.BaseDirectory}/1.txt");
             var dictionary = lines.ToDictionary(int.Parse, int.Parse);
 
             RunPart1(dictionary);
