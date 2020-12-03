@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using AdventOfCode.Helpers;
 
 namespace AdventOfCode.Challenges
 {
-    public class One
+    public class Day01
     {
         public static async Task Run()
         {
-            var lines = await FileHelper.ReadLines("1.txt");
+            var lines = await File.ReadAllLinesAsync($"{AppContext.BaseDirectory}/1.txt");
             var dictionary = lines.ToDictionary(int.Parse, int.Parse);
 
             RunPart1(dictionary);

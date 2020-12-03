@@ -1,15 +1,15 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using AdventOfCode.Helpers;
 
 namespace AdventOfCode.Challenges
 {
-    public class Two
+    public class Day02
     {
         public static async Task Run()
         {
-            var lines = await FileHelper.ReadLines("2.txt");
+            var lines = await File.ReadAllLinesAsync($"{AppContext.BaseDirectory}/2.txt");
             RunPart1(lines);
             RunPart2(lines);
         }
