@@ -9,9 +9,13 @@
     <None Remove="1.txt" />
     <None Remove="2.txt" />
     <None Remove="3.txt" />
+    <None Remove="4.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
