@@ -4,9 +4,9 @@ namespace AdventOfCode
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            Day08.Run();
+            Day09.Run();
         }
     }
 }
